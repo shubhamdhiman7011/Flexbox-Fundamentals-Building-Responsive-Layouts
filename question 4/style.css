@@ -1,0 +1,76 @@
+/* General reset and styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section heading style */
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Box container styles */
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Box styles */
+.box {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.time {
+    margin: 10px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.box-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.box-description {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Read more box styles */
+.read-more {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.read-more a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more a:hover {
+    background-color: #0056b3;
+}

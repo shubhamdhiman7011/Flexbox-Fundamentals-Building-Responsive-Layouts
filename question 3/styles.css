@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-box {
+    width: 30%; /* Adjust width to fit three boxes in one line */
+    margin-right: 10px;
+}
+
+.video-box:last-child {
+    margin-right: 0; /* Remove margin for the last box */
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.video-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}

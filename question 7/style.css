@@ -1,0 +1,110 @@
+/* Reset some default styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Adjust based on your logo size */
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff4c3b; /* Masai red */
+}
+
+.nav-actions {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-actions li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.btn-apply {
+    background-color: #ff4c3b; /* Masai red */
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #ff2a1d; /* Darker red for hover effect */
+}
+
+/* Responsive Design */
+.navbar-toggler {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+.navbar-links.active .nav-links,
+.navbar-links.active .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+}
